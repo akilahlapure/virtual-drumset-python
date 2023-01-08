@@ -89,13 +89,13 @@ kernel = np.ones((7,7),np.uint8)
 
 # Read the images
 # cv2.resize(src, desired size, interpolation)
-kick = cv2.resize(cv2.imread('./images/kick-cropped.png'),(420,280),interpolation=cv2.INTER_CUBIC)
-snare = cv2.resize(cv2.imread('./images/snare.png'),(210,130),interpolation=cv2.INTER_CUBIC)
-hihat = cv2.resize(cv2.imread('./images/ride-btm-cropped.png'),(210,440),interpolation=cv2.INTER_CUBIC)
-hihat_open = cv2.resize(cv2.imread('./images/ride-side-cropped.png'),(200,570),interpolation=cv2.INTER_CUBIC) 
-tom = cv2.resize(cv2.imread('./images/tom.png'),(220,170),interpolation=cv2.INTER_CUBIC)
-ride = cv2.flip(cv2.resize(cv2.imread('./images/ride-btm-cropped.png'),(210,440),interpolation=cv2.INTER_CUBIC), 1) #flip image horizontally
-crash = cv2.flip(cv2.resize(cv2.imread('./images/ride-side-cropped.png'),(200,570),interpolation=cv2.INTER_CUBIC), 1) #flip image horizontally
+kick = cv2.resize(cv2.imread('images/kick-cropped.png'),(420,280),interpolation=cv2.INTER_CUBIC)
+snare = cv2.resize(cv2.imread('images/snare.png'),(210,130),interpolation=cv2.INTER_CUBIC)
+hihat = cv2.resize(cv2.imread('images/ride-btm-cropped.png'),(210,440),interpolation=cv2.INTER_CUBIC)
+hihat_open = cv2.resize(cv2.imread('images/ride-side-cropped.png'),(200,570),interpolation=cv2.INTER_CUBIC) 
+tom = cv2.resize(cv2.imread('images/tom.png'),(220,170),interpolation=cv2.INTER_CUBIC)
+ride = cv2.flip(cv2.resize(cv2.imread('images/ride-btm-cropped.png'),(210,440),interpolation=cv2.INTER_CUBIC), 1) #flip image horizontally
+crash = cv2.flip(cv2.resize(cv2.imread('images/ride-side-cropped.png'),(200,570),interpolation=cv2.INTER_CUBIC), 1) #flip image horizontally
 
 # Set the region area for detecting red color 
 kick_center = [446,534] #[x, y]
